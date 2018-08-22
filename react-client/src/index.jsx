@@ -11,7 +11,7 @@ class App extends React.Component {
     }
   }
 
-  componentDidMount() {
+/*  componentDidMount() {
     $.ajax({
       url: '/items',
       success: (data) => {
@@ -24,7 +24,7 @@ class App extends React.Component {
       }
     });
   }
-
+*/
   render () {
     return (<div>
       <h1>Magic Doggo</h1>
