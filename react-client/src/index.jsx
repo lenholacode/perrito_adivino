@@ -27,9 +27,9 @@ class App extends React.Component {
       }
     });
   }
-//<Greeting isLoggedIn={false} />
+
   handleButton(){
-    let randomIndex = Math.floor(Math.random() * 2)
+    let randomIndex = Math.floor(Math.random() * 30)
     let fortune = this.state.items[randomIndex]
     this.setState({
       fortune: fortune

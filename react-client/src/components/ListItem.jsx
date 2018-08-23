@@ -4,7 +4,7 @@ const ListItem = (props) => (
   <div>
     { props.item ?
       <li>{props.item.description}</li>
-    : <li>"empty fortune"</li> }
+    : <p>"¿Qué me depara el futuro?"</p> }
   </div>
 )
 
