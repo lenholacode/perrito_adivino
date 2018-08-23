@@ -11,5 +11,8 @@ CREATE TABLE items (
 );
 
 /*  Execute this file from the command line by typing:
- *    mysql -u root < server/schema.sql
+ *    mysql -u root -p < server/schema.sql
  *  to create the database and the tables.*/
+
+INSERT INTO items (description) VALUES ("Morirás mañana");
+INSERT INTO items (description) VALUES ("Hallarás dinero en tus pantalones. Emocionalmente.");
