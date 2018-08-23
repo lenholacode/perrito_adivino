@@ -8,3 +8,5 @@ const ListItem = (props) => (
 )
 
 export default ListItem;
+
+//[Math.floor(Math.random() * 2)]
