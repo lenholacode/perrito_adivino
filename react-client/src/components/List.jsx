@@ -6,7 +6,7 @@ const List = (props) => (
     <h4> Your Future </h4>
     There are { props.items.length } possible futures for you.
     <h2>
-    <button onClick={ListItem}>OH GRAN PERRO SABIO, DIME MI FUTURO</button>
+    <button onClick={props.handleButton}>OH GRAN PERRO SABIO, DIME MI FUTURO</button>
     </h2>
   </div>
 )
