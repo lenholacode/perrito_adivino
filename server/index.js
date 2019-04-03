@@ -1,20 +1,21 @@
-var express = require('express');
-var bodyParser = require('body-parser');
+const express = require('express');
+const bodyParser = require('body-parser');
 
- var items = require('../database-mysql/index.js');
+const db = require('../database-mysql/index.js');
 
-
-var app = express();
+const app = express();
 
  app.use(express.static(__dirname + '/../react-client/dist'));
 
 
 app.get('/items', function (req, res) {
-  items.selectAll(function(err, data) {
+  console.log('iside of end poit');
+  // res.send('hello world from back-end')
+  db.selectAll(function(err, data) {
     if(err) {
       res.sendStatus(500);
     } else {
-      console.log("hi i love u")
+      console.log("hi i love u", data)
       res.json(data);
     }
   });
